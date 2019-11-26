@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "carrotsuite",
+    "slug": "carrotsuit",
+    "privacy": "public",
+    "sdkVersion": "35.0.0",
+    "platforms": [
+      "android"
+    ],
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/carrotsuit.png",
+    "splash": {
+      "image": "./assets/carrotsuit.png",
+      "resizeMode": "contain",
+      "width":"80%",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "carrotsuite"
+    }
+  }
+}
