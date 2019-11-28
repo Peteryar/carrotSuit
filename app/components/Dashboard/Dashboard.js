@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity, Dimensions, Image } from 'react-native';
 import { MaterialCommunityIcons, FontAwesome, AntDesign, MaterialIcons } from '@expo/vector-icons';
 import styles from './style';
+import * as Font from 'expo-font';
 import FooterNav from '../FooterNav/index';
 import BurgerMenu from './BurgerMenu/index';
 
@@ -10,6 +11,12 @@ class Dashboard extends React.Component {
  constructor(props){
      super(props)
  }
+ async componentDidMount() {
+    await Font.loadAsync({
+        'ptsans-bold': require('../../../assets/fonts/PTSans-Bold.ttf'),
+        'redhattext-bold': require('../../../assets/fonts/RedHatText-Bold.ttf')
+    });
+}
     openDrawer() {
         this.props.navigation.openDrawer();
     }
@@ -18,12 +25,9 @@ class Dashboard extends React.Component {
             <View style={styles.container}>
                 <View style={styles.header} >
                     <BurgerMenu openSideBar ={this.props.navigation}/>
-                    {/* <TouchableOpacity onPress={this.openDrawer.bind(this)}>
-                        <Image  source={require('../../../assets/burger.png')} style={{ marginLeft: 4.73 / 100 * width }} />
-                    </TouchableOpacity> */}
 
                     <View style={styles.titleCon}>
-                        <Text style={styles.titleText}>Dashboard</Text>
+                        <Text style={[styles.titleText,{fontFamily:'ptsans-bold'}]}>Dashboard</Text>
                     </View>
                 </View>
 

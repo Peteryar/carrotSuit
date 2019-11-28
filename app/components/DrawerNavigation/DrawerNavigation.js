@@ -15,6 +15,7 @@ import UserProfile from '../MainActivities/UserProfile/index';
 import Vendors from '../MainActivities/Vendors/index';
 import Staffs from '../MainActivities/Staffs/index';
 import Requisition from '../MainActivities/Requisition/index';
+import CreateTasks from '../MainActivities/Tasks/CreateTasks/index';
 
 
 
@@ -33,7 +34,8 @@ const SideBar = createDrawerNavigator({
      "Repair Request":RepairRequest,
      Staffs,
      "User Profile":UserProfile,
-     Logout
+     Logout,
+     CreateTasks
 }, {
     navigationOptions: { header: null },
     contentComponent: NavDisplayPage,

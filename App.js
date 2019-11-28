@@ -1,18 +1,26 @@
 import React from 'react';
-import { StyleSheet, StatusBar, Text, View } from 'react-native';
-import Dashboard from './app/components/Dashboard/index';
+import { StyleSheet, StatusBar, Text, View, ActivityIndicator } from 'react-native';
 import Landing from './app/components/Navigation/Navigation';
-import SideBarCon from './app/components/DrawerNavigation/DrawerNavigation';
-import Tasks from './app/components/MainActivities/Tasks/index';
+import * as Font from 'expo-font';
+import Requisition from './app/components/MainActivities/Requisition/index';
 
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      fontsLoaded: false
+    }
+  }
+  render() {
+    return (
+      <View style={{ flex: 1 }}>
+        <StatusBar hidden={true} />
+       <Landing />
+      </View>
 
-export default function App() {
-  return (
-    <View style={{ flex: 1 }}>
-      <StatusBar hidden={true} />
-      <Landing />
-    </View>
+    );
+  }
 
-  );
 }
+
 

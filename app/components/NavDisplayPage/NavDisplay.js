@@ -1,9 +1,10 @@
 import React from 'react';
-import { TouchableOpacity, Text, View} from 'react-native';
+import { TouchableOpacity, Text, View, Dimensions} from 'react-native';
 import { MaterialCommunityIcons, FontAwesome, AntDesign, MaterialIcons } from '@expo/vector-icons';
 import styles from './style';
 import { DrawerItems } from 'react-navigation-drawer';
 
+const {width, height} = Dimensions.get('window');
 class NavDisplayPage extends React.Component {
     constructor(props) {
         super(props);
@@ -25,7 +26,7 @@ class NavDisplayPage extends React.Component {
                     </View>
                 </View>
                 <View style={{height:'100%'}}>
-                    <DrawerItems {...this.props} inactiveTintColor='#04304b' activeBackgroundColor='#04304b' activeTintColor='#fff'/>
+                    <DrawerItems itemStyle={{ height: 6/100*height, padding:0, margin:0 }} {...this.props} inactiveTintColor='#04304b' activeBackgroundColor='#04304b' activeTintColor='#fff'/>
                 </View>
             </View>
         )

@@ -9,7 +9,7 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/carrotsuit.png",
+    "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/carrotsuit.png",
       "resizeMode": "contain",
@@ -26,7 +26,7 @@
       "supportsTablet": true
     },
     "android": {
-      "package": "carrotsuite"
+      "package": "carrotsuite.com"
     }
   }
 }

@@ -1,3 +1,3 @@
 import Staffs from './Staffs';
 
-export default './Staffs';
+export default Staffs;

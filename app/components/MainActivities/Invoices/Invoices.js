@@ -1,10 +1,11 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import styles from './styles';
 
 class Invoices extends React.Component{
     render(){
         return(
-            <View>
+            <View style={styles.container}>
                 <Text> Invoices Screen</Text>
             </View>
         )

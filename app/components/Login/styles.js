@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         lineHeight: 32,
         marginTop: '19%',
-        marginBottom: '4.5%'
+        marginBottom: '4.5%',
     },
     inputsCon: {
         flexDirection:'row',
@@ -43,10 +43,10 @@ const styles = StyleSheet.create({
       },
     inputs: {
         height: 50,
-        width:'88.5%',
+        width:'100%',
     },
     forgotPassword: {
-        width: 80 / 100 * width,
+        width: 88.5 / 100 * width,
         textAlign: 'right',
         marginTop: 2,
         fontWeight: 'bold'
