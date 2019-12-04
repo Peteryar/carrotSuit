@@ -21,7 +21,7 @@ class Tasks extends React.Component {
                 </View>
                 <View style={styles.main}>
                     <Image source={require('../../../../assets/Task.png')} />
-                    <TouchableOpacity style={styles.mainItems}><Text style={[styles.mainText,{fontFamily:'ptsans-bold'}]}>View Tasks</Text></TouchableOpacity>
+                    <TouchableOpacity onPress={()=>this.props.navigation.navigate('ViewTasks')} style={styles.mainItems}><Text style={[styles.mainText,{fontFamily:'ptsans-bold'}]}>View Tasks</Text></TouchableOpacity>
                     <TouchableOpacity onPress={()=>this.props.navigation.navigate('CreateTasks')} style={styles.mainItems}><Text style={[styles.mainText,{fontFamily:'ptsans-bold'}]}>Create Tasks</Text></TouchableOpacity>
                     <TouchableOpacity style={styles.mainItems}><Text style={[styles.mainText,{fontFamily:'ptsans-bold'}]}>Update Status</Text></TouchableOpacity>
                 </View>

@@ -8,7 +8,13 @@ import Login from '../Login/index';
 import Dashboard from '../Dashboard/index';
 import Signup from '../Signup/index';
 import NavDisplayPage from '../NavDisplayPage/index';
-import CreateTasks from '../MainActivities/Tasks/CreateTasks/index'
+import CreateTasks from '../MainActivities/Tasks/CreateTasks/index';
+import ViewClients from '../MainActivities/Clients/ViewClients/index';
+import ViewTasks from '../MainActivities/Tasks/ViewTasks/index';
+import RecordExpenses from '../MainActivities/Expenses/RecordExpenses/index';
+import CreateInvoice from '../MainActivities/Invoices/CreateInvoice/index';
+import CreateRequisition from '../MainActivities/Requisition/CreateRequisition/index';
+import ViewRequisitions from '../MainActivities/Requisition/ViewRequisitions/index';
 
 
 const AppNavigator = createStackNavigator({
@@ -16,7 +22,13 @@ const AppNavigator = createStackNavigator({
     SideBar,
     Signup,
     ForgotPassword,
-    CreateTasks
+    CreateTasks,
+    ViewClients,
+    ViewTasks,
+    RecordExpenses,
+    CreateInvoice,
+    CreateRequisition,
+    ViewRequisitions
 },
     {
         initialRouteName: 'Login'

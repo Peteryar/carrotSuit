@@ -122,7 +122,6 @@ const styles = StyleSheet.create({
         fontSize: 20,
         lineHeight: 31,
         color: '#fff',
-    },
-    
+    }
 })
 export default styles;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Image, TextInput, Picker, Text, Dimensions, ActivityIndicator, TouchableOpacity } from 'react-native';
-import FooterNav from '../../../FooterNav/index';
+import FooterNav from '../../../../components/FooterNav/index';
 import styles from './styles';
 import BurgerMenu from '../../../Dashboard/BurgerMenu/index';
 import * as Font from 'expo-font';
@@ -8,22 +8,18 @@ import ModalDropdown from 'react-native-modal-dropdown';
 import { Ionicons } from '@expo/vector-icons';
 
 const { width, height } = Dimensions.get('window');
-class CreateTask extends React.Component {
+class RecordExpenses extends React.Component {
     static navigationOptions = {
-        drawerLabel: () => null,
         header: null
    }
     constructor(props) {
         super(props);
         this.state = {
             fontsLoaded: false,
-            assignTo:"Assign To",
-            notify:"When Done Notify",
-            priority:'Priority',
-            selectTask:"Select Task Status",
-            reminder:"Set Reminder",
-            dueDate:"Due Date",
-            dueDateDu:'Due Date Duration'
+            assignTo:"Select Credit Account",
+            notify:"Select Related Item",
+            priority:'Select Beneficiary',
+            selectTask:"Expense Category",
         }
     }
     async componentDidMount() {
@@ -40,19 +36,19 @@ class CreateTask extends React.Component {
     render() {
         if (this.state.fontsLoaded) {
             return (
-                //onSelect function will make a dropdown components to appear to update the  selected value
+                //onSelect function is written dropdown components to update the  selected value
                 <View style={styles.container}>
                     <View style={styles.header}>
-                        <BurgerMenu openSideBar={this.props.navigation}/>
-                        <Text style={[styles.title, { fontFamily: 'ptsans-bold' }]}>Create Task</Text>
+                        <BurgerMenu openSideBar={this.props.navigation.state.params.navigation}/>
+                        <Text style={[styles.title, { fontFamily: 'ptsans-bold' }]}>Expenses</Text>
                     </View>
                     <View style={{alignItems:"center", height: '80%', justifyContent:'center'}}>
                         <View style={styles.inputCon}>
-                            <TextInput placeholder="Task Subject" />
+                            <TextInput placeholder="Expense Date" />
                         </View>
 
                         <View style={styles.inputCon}>
-                            <TextInput placeholder="Task Description" />
+                            <TextInput placeholder="Reference Number" />
                         </View>
 
                         <ModalDropdown onSelect={(index, value)=>this.setState({assignTo:value})} onSelect={(index, value)=>this.setState({assignTo:value})} options={['Family', 'School', 'State', 'Area']} style={styles.dropDownCon}>
@@ -82,27 +78,19 @@ class CreateTask extends React.Component {
                                 <Ionicons name="md-arrow-dropdown"  size={35} />
                             </View>
                         </ModalDropdown>
-
-                        <ModalDropdown onSelect={(index, value)=>this.setState({reminder:value})} options={['Family', 'School', 'State', 'Area']} style={styles.dropDownCon}>
-                            <View style={styles.dropDownField}>
-                                <TextInput placeholder={this.state.reminder} style={{width:'93%'}}/>
-                                <Ionicons name="md-arrow-dropdown"  size={35} />
-                            </View>
-                        </ModalDropdown>
-
-                        <ModalDropdown onSelect={(index, value)=>this.setState({dueDate:value})} options={['Family', 'School', 'State', 'Area']} style={styles.dropDownCon}>
-                            <View style={styles.dropDownField}>
-                                <TextInput placeholder={this.state.dueDate} style={{width:'93%'}}/>
-                                <Ionicons name="md-arrow-dropdown"  size={35} />
-                            </View>
-                        </ModalDropdown>
-
-                        <ModalDropdown onSelect={(index, value)=>this.setState({dueDateDu:value})} options={['Family', 'School', 'State', 'Area']} style={styles.dropDownCon}>
-                            <View style={styles.dropDownField}>
-                                <TextInput placeholder={this.state.dueDateDu} style={{width:'93%'}}/>
-                                <Ionicons name="md-arrow-dropdown"  size={35} />
-                            </View>
-                        </ModalDropdown>
+                        <View style={styles.inputCon}>
+                            <TextInput placeholder="Amount" />
+                        </View>
+                        <View style={styles.inputCon}>
+                            <TextInput placeholder="Description" />
+                        </View>
+                        <View style={styles.uploadCon}>
+                            <Text style={{width:'50%'}}>Upload Document(s)</Text>
+                            <Text style={{width:'50%', textAlign:"right"}}>Remove</Text>
+                        </View>
+                        <TouchableOpacity style={styles.button}>
+                            <Text style={styles.buttonText}>Save Expense</Text>
+                        </TouchableOpacity>
                     </View>
                        <FooterNav />
                 </View>
@@ -115,4 +103,4 @@ class CreateTask extends React.Component {
 
     }
 }
-export default CreateTask;
+export default RecordExpenses;

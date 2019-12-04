@@ -23,7 +23,7 @@ class Requisition extends React.Component {
                     <Text style={[styles.title, { fontFamily: 'ptsans-bold' }]}>Requisition</Text>
                 </View>
                 <View style={styles.main}>
-                    <TouchableOpacity style={styles.mainItems}><Text style={[styles.mainText, { fontFamily: 'ptsans-bold' }]}>Create Requisition</Text></TouchableOpacity>
+                    <TouchableOpacity onPress={()=>this.props.navigation.navigate('CreateRequisition')} style={styles.mainItems}><Text style={[styles.mainText, { fontFamily: 'ptsans-bold' }]}>Create Requisition</Text></TouchableOpacity>
                 </View>
                 <View style={{alignItems:"center", height:60/100*height}}>
                     <View style={styles.detailsHeader}>

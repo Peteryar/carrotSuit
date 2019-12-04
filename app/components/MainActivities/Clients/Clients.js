@@ -22,7 +22,7 @@ class Clients extends React.Component {
                 <View style={styles.main}>
                     <Image source={require('../../../../assets/client.png')} />
                     <TouchableOpacity style={styles.mainItems}><Text style={[styles.mainText,{fontFamily:'ptsans-bold'}]}>Create / Edit Client</Text></TouchableOpacity>
-                    <TouchableOpacity style={styles.mainItems}><Text style={[styles.mainText,{fontFamily:'ptsans-bold'}]}>View Clients</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.mainItems} onPress={()=>this.props.navigation.navigate('ViewClients')}><Text style={[styles.mainText,{fontFamily:'ptsans-bold'}]}>View Clients</Text></TouchableOpacity>
                     <TouchableOpacity style={styles.mainItems}><Text style={[styles.mainText,{fontFamily:'ptsans-bold'}]}>View Clients List</Text></TouchableOpacity>
                 </View>
                 <FooterNav />

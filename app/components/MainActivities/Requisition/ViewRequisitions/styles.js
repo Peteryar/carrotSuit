@@ -66,7 +66,6 @@ const styles = StyleSheet.create({
         fontSize: 11,
         lineHeight: 14,
         color: "#fff",
-        marginLeft: 5
     },
     detailsBodyCon: {
         alignItems: "center"

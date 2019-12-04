@@ -5,6 +5,9 @@ import { TouchableOpacity, Image, Dimensions } from 'react-native';
 const { width, height } = Dimensions.get("window")
 
 class BurgerMenu extends React.Component {
+    componentDidMount(){
+        // console.warn(this.props.openSideBar.text)
+    }
     render() {
         return (
             <TouchableOpacity onPress={this.props.openSideBar.openDrawer}>

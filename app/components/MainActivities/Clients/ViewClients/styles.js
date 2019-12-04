@@ -3,8 +3,7 @@ import { StyleSheet, Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 const styles = StyleSheet.create({
     constainer:{
-        flex:1,
-        height: height
+        flex:1
     },
     header: {
         height: 10 / 100 * height,
@@ -22,6 +21,26 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 24,
         lineHeight: 31
+    },
+    searchCon: {
+        alignItems: "center",
+        flexDirection: "row",
+        height: 54,
+        width: '86%',
+        borderWidth: 1,
+        borderColor: '#000',
+        borderRadius: 10,
+    },
+    input: {
+        width: '90%',
+    },
+    description: {
+        width: '86%',
+        fontStyle: 'normal',
+        fontWeight: 'bold',
+        fontSize: 14,
+        lineHeight: 18,
+        textAlign: "center",
     },
     clientCon:{
       height: 60/100*height,
@@ -99,30 +118,6 @@ const styles = StyleSheet.create({
         color: '#fff',
         marginLeft: 3 / 100 * width,
         marginRight: 3 / 100 * width
-    },
-    main: {
-        height:80/100*height,
-        alignItems: "center",
-        justifyContent: "center",
-        width: '100%'
-    },
-    actionButton: {
-        marginTop:5,
-        width: '89%',
-        height: 60,
-        backgroundColor: '#04304b',
-        borderRadius: 20,
-        marginBottom: '2.2%',
-        justifyContent: "center",
-    },
-    actionButtonText: {
-        marginLeft: '8.4%',
-        fontStyle: 'normal',
-        fontWeight: 'bold',
-        fontSize: 20,
-        lineHeight: 31,
-        color: '#fff',
-    },
-    
+    }
 })
 export default styles;
