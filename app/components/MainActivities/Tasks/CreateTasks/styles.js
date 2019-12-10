@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     header: {
-        height: 10 / 100 * height,
+        height: 15 / 100 * height,
         flexDirection: 'row',
         width: '100%',
         alignItems: "center"
@@ -19,17 +19,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center'
 
     },
-    dropDownCon: { width: '88.5%', 
-    borderBottomWidth: 1, 
-    borderBottomColor: 'gray', 
-    height: 40,
-    marginTop:10
- },
-    dropDownField: {
-        width:'100%', 
-        flexDirection:'row',
-        justifyContent:"center"
-    },
+    
     title: {
         width: '75.27%',
         textAlign: "center",
@@ -37,7 +27,27 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 24,
         lineHeight: 31
-    }
+    },
+    main: {
+        height: 10 / 100 * height,
+        justifyContent: "center"
+    },
+    mainItems: {
+        width: 89/100*width,
+        height: 60,
+        backgroundColor: '#04304b',
+        borderRadius: 20,
+        justifyContent: "center",
+        alignSelf: "center"
+    },
+    mainText: {
+        fontStyle: 'normal',
+        fontWeight: 'bold',
+        fontSize: 20,
+        lineHeight: 31,
+        color: '#fff',
+        textAlign:"center"
+    },
 })
 
 export default styles;

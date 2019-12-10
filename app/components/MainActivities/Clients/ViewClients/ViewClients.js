@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Image, Text, Dimensions, TextInput, TouchableOpacity } from 'react-native';
-import FooterNav from '../../../FooterNav/index';
+import FooterNav from '../../../public/FooterNav/index';
 import styles from './styles';
 import Client from './Client';
-import BurgerMenu from '../../../Dashboard/BurgerMenu/index';
+import Header from '../../../public/Header/index';
 import * as Font from 'expo-font';
 import { Ionicons, Foundation, FontAwesome } from '@expo/vector-icons';
 
@@ -75,10 +75,7 @@ class ViewClients extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <View style={styles.header}>
-                    <BurgerMenu openSideBar={this.props.navigation} />
-                    <Text style={[styles.title, { fontFamily: 'ptsans-bold' }]}>View Clients</Text>
-                </View>
+                    <Header title="View Clients" openSideBar={this.props.navigation} />
                 <View style={{ width: width, justifyContent: "center", alignItems: "center", height: 20 / 100 * height }}>
                     <View style={styles.searchCon}>
                         <TextInput style={[styles.input, { fontFamily: 'ptsans-bold' }]} />

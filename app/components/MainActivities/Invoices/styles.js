@@ -7,7 +7,7 @@ const styles = StyleSheet.create({
         height: height
     },
     header: {
-        height: 10 / 100 * height,
+        height: 15 / 100 * height,
         flexDirection: 'row',
         width: '100%',
         alignItems: "center"
@@ -63,7 +63,9 @@ const styles = StyleSheet.create({
     clientButtonCon: {
         flexDirection: "row",
         width: '67.5%',
-        alignItems: "center"
+        alignItems: "center",
+        marginTop:10,
+        marginBottom:10
     },
     clientButton: {
         height: 22,

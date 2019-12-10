@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     header: {
-        height: 10 / 100 * height,
+        height: 15 / 100 * height,
         flexDirection: 'row',
         width: '100%',
-        alignItems: "center"
+        alignItems: "center",
     },
     burger: {
         marginLeft: '4.1%'
@@ -27,9 +27,9 @@ const styles = StyleSheet.create({
         fontSize: 24,
         lineHeight: 31
     },
-    main:{
-height:20/100*height,
-justifyContent:"center"
+    main: {
+        height: 20 / 100 * height,
+        justifyContent: "center"
     },
     mainItems: {
         width: '89%',
@@ -38,7 +38,7 @@ justifyContent:"center"
         borderRadius: 20,
         marginBottom: '2.2%',
         justifyContent: "center",
-        alignSelf:"center"
+        alignSelf: "center"
     },
     mainText: {
         marginLeft: '8.4%',
@@ -50,30 +50,31 @@ justifyContent:"center"
     },
     detailsCon: {
         width: '89%',
-        alignSelf:'center'
+        alignSelf: 'center'
     },
     detailsHeader: {
-        width:89/100*width,
-        height: 5.625/100*height,
+        width: 89 / 100 * width,
+        height: 5.625 / 100 * height,
         flexDirection: 'row',
         backgroundColor: '#04304b',
         height: 5.62 / 100 * height,
-        alignItems: "center"
+        alignItems: "center",
+        alignSelf: "center"
     },
-    detailsheaderText:{
+    detailsheaderText: {
         fontStyle: 'normal',
         fontWeight: 'bold',
         fontSize: 11,
         lineHeight: 14,
         color: "#fff",
-        marginLeft:5
+        marginLeft: 5
     },
-    detailsBodyCon:{
-    alignItems:"center"
+    detailsBodyCon: {
+        alignItems: "center"
     },
     detailsBody: {
-        width:89/100*width,
-        height: 12.2/100*height,
+        width: 89 / 100 * width,
+        height: 12.2 / 100 * height,
         flexDirection: 'row',
     },
     detailsBodyLeft: {
@@ -83,7 +84,7 @@ justifyContent:"center"
         width: '50%',
     },
     detailsBodyText: {
-        marginLeft:5,
+        marginLeft: 5,
         fontStyle: 'normal',
         fontWeight: 'bold',
         fontSize: 12,

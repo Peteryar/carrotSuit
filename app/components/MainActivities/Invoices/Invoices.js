@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Image, Text, Dimensions, TextInput, TouchableOpacity } from 'react-native';
-import FooterNav from '../../FooterNav/index';
+import FooterNav from '../../public/FooterNav/index';
 import InvoiceItems from './InvoiceItems';
 import styles from './styles';
-import BurgerMenu from '../../Dashboard/BurgerMenu/index';
+import Header from '../../public/Header/index';
 import * as Font from 'expo-font';
 import { Ionicons, Foundation, FontAwesome } from '@expo/vector-icons';
 
@@ -86,10 +86,7 @@ class ViewTasks extends React.Component {
     render() {
         return (
             <View style={styles.container}>
-                <View style={styles.header}>
-                    <BurgerMenu openSideBar={this.props.navigation} />
-                    <Text style={[styles.title, { fontFamily: 'ptsans-bold' }]}>Invoices</Text>
-                </View>
+                    <Header title ="Invoices" openSideBar={this.props.navigation} />
                 <View style={styles.clientCon}>
                     <View style={styles.clientHeader}>
                         <Text style={styles.clientText}>Clients</Text>
@@ -97,7 +94,7 @@ class ViewTasks extends React.Component {
                     <InvoiceItems invoiceData={this.state.invoiceData}/>
                 </View>
 
-                <View style={{ height: 20 / 100 * height, alignItems: "center", justifyContent: "center" }}>
+                <View style={{ height: 15 / 100 * height, alignItems: "center", justifyContent: "center" }}>
                     <TouchableOpacity onPress={() => this.props.navigation.navigate('CreateInvoice')} style={styles.actionButton}><Text style={[styles.actionButtonText, { fontFamily: 'ptsans-bold' }]}>Create New Invoice</Text></TouchableOpacity>
                 </View>
 

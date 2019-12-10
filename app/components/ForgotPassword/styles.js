@@ -4,7 +4,7 @@ const { width, height } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
     headerBackground: {
-        height: 35 / 100 * height
+        height: 40 / 100 * height
     },
     paddlockCon: {
         width: width,
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
 
     },
     paddlock: {
-        height: '90%',
+        height: '80%',
         alignItems: "center",
         justifyContent: "center",
     },
@@ -59,9 +59,8 @@ const styles = StyleSheet.create({
         borderBottomColor: 'gray',
         alignItems: "center",
         alignSelf: "center",
-        height:6.25/100*height,
-        marginTop:4.375/100*height,
-        marginBottom:4.375/100*height,
+        height:10/100*height,
+        justifyContent:"center"
     },
     icon: {
         width: '20%',

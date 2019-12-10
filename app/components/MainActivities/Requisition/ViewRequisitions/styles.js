@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     header: {
-        height: 10 / 100 * height,
+        height: 15 / 100 * height,
         flexDirection: 'row',
         width: '100%',
         alignItems: "center"
@@ -58,7 +58,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         backgroundColor: '#04304b',
         height: 5.62 / 100 * height,
-        alignItems: "center"
+        alignItems: "center",
+        justifyContent:"center"
     },
     detailsheaderText: {
         fontStyle: 'normal',
@@ -72,20 +73,21 @@ const styles = StyleSheet.create({
     },
     detailsBody: {
         width: 89 / 100 * width,
-        height: 12.2 / 100 * height,
+        height: 20 / 100 * height,
         flexDirection: 'row',
+        justifyContent:"center",
+        alignItems:"center"
     },
     detailsBodyLeft: {
-        width: '33.33%'
+        width: '30%'
     },
     detailsBodyCenter:{
-      width:'33.33%'
+      width:'30%'
     },
     detailsBodyRight: {
-        width: '33.33%',
+        width: '30%',
     },
     detailsBodyText: {
-        marginLeft: 5,
         fontStyle: 'normal',
         fontWeight: 'bold',
         fontSize: 12,

@@ -10,7 +10,7 @@ import RNPickerSelect from 'react-native-picker-select';
 import DropDown from '../../../public/DropDown/DropDown';
 
 const { width, height } = Dimensions.get('window');
-class CreateRequisition extends React.Component {
+class LogRepair extends React.Component {
     static navigationOptions = {
         drawerLabel: () => null,
         header: null
@@ -28,7 +28,7 @@ class CreateRequisition extends React.Component {
 
             //onSelect function will make a dropdown components to appear to update the  selected value
             <View style={styles.container}>
-                <Header title="Create Requisition" openSideBar={this.props.navigation} />
+                <Header title="Log Repair" openSideBar={this.props.navigation} />
                 <ScrollView style={{ height: 80 / 100 * height }}>
                     <View style={{ height: '100%', justifyContent: 'center' }}>
                         <View style={styles.inputCon}>
@@ -36,21 +36,21 @@ class CreateRequisition extends React.Component {
                         </View>
                         <DropDown placeholder="Select Type" />
                         <DropDown placeholder="By" />
-                        <DropDown placeholder="Select Bill" />
-                        <DropDown placeholder="Select Due Date" />
-                        <DropDown placeholder="Expense Category" />
-                        <DropDown placeholder="Enter Category" />
+                        <DropDown placeholder="Select Client" />
+                        <DropDown placeholder="Select Due Estate" />
+                        <DropDown placeholder="Expense Location" />
 
                         <View style={[styles.inputCon, { height: 70, justifyContent: "flex-end", paddingBottom: 10 }]}>
                             <TextInput placeholder="Enter Purpose / Description" />
                         </View>
+                        <DropDown placeholder="Select Priority" />
+                        <DropDown placeholder="Select Category" />
+                        <DropDown placeholder="Tags" />
 
                         <View style={styles.inputCon}>
-                            <TextInput placeholder="Amount" />
+                            <TextInput placeholder="Repair Description" />
                         </View>
-                        <View style={styles.inputCon}>
-                            <TextInput placeholder="Related Item" required />
-                        </View>
+
                         <View style={styles.chooseFileCon}>
                             <Text
                                 style={[styles.chooseFileText, { fontFamily: 'ptsans-bold' }]}>
@@ -63,9 +63,9 @@ class CreateRequisition extends React.Component {
                         <View
                             style={{ height: 20 / 100 * height, alignItems: "center", justifyContent: "center" }}>
                             <TouchableOpacity
-                                onPress={() => this.props.navigation.navigate('Requisition')}
+                                onPress={() => this.props.navigation.navigate('Repair Request')}
                                 style={styles.actionButton}>
-                                <Text style={[styles.actionButtonText, { fontFamily: 'ptsans-bold' }]}>Create Requisition</Text>
+                                <Text style={[styles.actionButtonText, { fontFamily: 'ptsans-bold' }]}>Log Repair</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
@@ -79,4 +79,4 @@ class CreateRequisition extends React.Component {
 
     }
 }
-export default CreateRequisition;
+export default LogRepair;

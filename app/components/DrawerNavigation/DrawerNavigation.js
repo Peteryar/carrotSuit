@@ -15,13 +15,17 @@ import UserProfile from '../MainActivities/UserProfile/index';
 import Vendors from '../MainActivities/Vendors/index';
 import Staffs from '../MainActivities/Staffs/index';
 import Requisition from '../MainActivities/Requisition/index';
+import ViewTasks from '../MainActivities/Tasks/ViewTasks/index';
 import CreateTasks from '../MainActivities/Tasks/CreateTasks/index';
-
-
-
+import ViewClients from '../MainActivities/Clients/ViewClients/index';
+import CreateRequisition from '../MainActivities/Requisition/CreateRequisition/index'
+import RecordExpenses from '../MainActivities/Expenses/RecordExpenses/index';
+import CreateInvoice from '../MainActivities/Invoices/CreateInvoice/index';
+import ViewRequisitions from '../MainActivities/Requisition/ViewRequisitions/index';
+import LogRepair from '../MainActivities/RepairRequest/LogRepair/index';
 
 const SideBar = createDrawerNavigator({
-    Dashboard,
+  Dashboard,
     Tasks,
     Clients,
     Invoices,
@@ -35,7 +39,14 @@ const SideBar = createDrawerNavigator({
      Staffs,
      "User Profile":UserProfile,
      Logout,
-     CreateTasks
+     ViewTasks,
+     CreateTasks,
+     ViewClients,
+     CreateRequisition,
+     RecordExpenses,
+     CreateInvoice,
+     ViewRequisitions,
+     LogRepair
 }, {
     navigationOptions: { header: null },
     contentComponent: NavDisplayPage,

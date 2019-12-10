@@ -4,15 +4,15 @@ const { width, height } = Dimensions.get("window");
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        width: '100%',
-        height: '100%',
     },
     logo: {
-        marginTop: '3.6%',
-        marginLeft: '2.3%',
+        marginLeft:'4%',
+        height: 15/100*height,
+        justifyContent:"center"
     },
     welcomeCon: {
-      
+      height:40/100*height,
+      justifyContent:"center"
     },
     welcome: {
         width: 100 / 100 * width,
@@ -20,8 +20,6 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 24,
         lineHeight: 32,
-        marginTop: '19%',
-        marginBottom: '4.5%',
     },
     inputsCon: {
         flexDirection:'row',

@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     header: {
-        height: 10 / 100 * height,
+        height: 15 / 100 * height,
         flexDirection: 'row',
         width: '100%',
         alignItems: "center"
@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
         alignSelf: "flex-start",
         width: 119,
         height: 51,
-        backgroundColor: '#FF1414',
+        backgroundColor: '#04304B',
         justifyContent: "center",
         alignItems: "center"
     },

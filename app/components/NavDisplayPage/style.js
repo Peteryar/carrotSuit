@@ -15,11 +15,12 @@ const styles = StyleSheet.create({
     },
     userCon: {
         flexDirection: 'row',
-        height: '12.6%',
+        height: 15/100*height,
+        marginBottom:3,
         paddingRight: '5.3%',
         borderBottomWidth: 1,
         borderBottomColor: '#C4C4C4',
-        marginTop: 5
+        paddingTop:4/100*height
     },
     userInfo: {
         flex: 2,
@@ -40,13 +41,11 @@ const styles = StyleSheet.create({
         backgroundColor:'#04304b',
     },
     dashboardItems: {
-        color:'#04304b',
-        marginTop: '3%',
         marginLeft: '5%',
         fontFamily: 'Roboto',
-        fontSize: 18,
+        fontSize: 15,
         fontWeight: "normal",
-        lineHeight: 21
+        lineHeight: 21,
     }
 })
 

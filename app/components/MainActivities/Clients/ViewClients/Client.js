@@ -9,7 +9,6 @@ class Client extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            clientInfoDisplay: "none",
             active: 0,
         }
     }
@@ -29,12 +28,13 @@ class Client extends React.Component {
                     <TouchableOpacity
                         onPress={() => this.displayClientInfo(key)}
                         style={this.state.active === key ? styles.openedClientCon : styles.closedClientCon}>
-                        {this.state.active !== key ? <FontAwesome
-                            style={styles.closedClientText} name="plus" size={20} /> :
-                            <Foundation
-                                style={{ marginLeft: 3 / 100 * width, marginRight: 3 / 100 * width }}
-                                name="minus" size={20} />}
-                        <Text style={this.state.active === key ? [styles.closedClientText, { color: '#000' }] : styles.closedClientText}>{client.name}</Text>
+                        <FontAwesome
+                            style={this.state.active === key ?[styles.closedClientText,{color:'#000'}] : styles.closedClientText}
+                            name={this.state.active === key ? 'minus' : "plus"} size={20} />
+                        <Text
+                            style={this.state.active === key ?
+                                [styles.closedClientText, { color: '#000' }] :
+                                styles.closedClientText}>{client.name}</Text>
                     </TouchableOpacity>
 
                     <View

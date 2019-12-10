@@ -11,10 +11,10 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     header: {
-        height: 10 / 100 * height,
+        height: 15 / 100 * height,
         flexDirection: 'row',
         width: '100%',
-        alignItems: "center"
+        alignItems: "center",
     },
     burger: {
         marginLeft: '4.1%'
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
         lineHeight: 31
     },
     main: {
-        height: 10 / 100 * height,
+        height: 20 / 100 * height,
         justifyContent: "center"
     },
     mainItems: {
@@ -36,7 +36,6 @@ const styles = StyleSheet.create({
         height: 60,
         backgroundColor: '#04304b',
         borderRadius: 20,
-        marginBottom: '2.2%',
         justifyContent: "center",
         alignSelf: "center"
     },
@@ -57,8 +56,8 @@ const styles = StyleSheet.create({
         height: 5.625 / 100 * height,
         flexDirection: 'row',
         backgroundColor: '#04304b',
-        height: 5.62 / 100 * height,
-        alignItems: "center"
+        alignSelf:"center",
+        alignItems:"center"
     },
     detailsheaderText: {
         fontStyle: 'normal',

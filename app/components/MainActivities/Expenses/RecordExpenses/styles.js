@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     header: {
-        height: 10 / 100 * height,
+        height: 15 / 100 * height,
         flexDirection: 'row',
         width: '100%',
         alignItems: "center"
@@ -49,18 +49,36 @@ const styles = StyleSheet.create({
         alignItems:"center",
 
     },
-    uploadCon:{
-    flexDirection:"row",
-    width:'85.5%',
-    height:9.5/100*height,
-    alignItems:"center"
+    chooseFile:{
+        height:30,
+        width:101,
+        backgroundColor:'#F3F3F3',
+        alignItems:"center",
+        justifyContent:"center"
     },
-    buttonText: {
+    fileButtonText:{
+        fontStyle: 'normal',
+        fontWeight: 'normal',
+        fontSize: 13,
+        lineHeight: 17,
+    },
+    actionButton: {
+        marginTop: 5,
+        width: '89%',
+        height: 60,
+        backgroundColor: '#04304b',
+        borderRadius: 20,
+        marginBottom: '2.2%',
+        justifyContent: "center",
+        alignItems:"center"
+    },
+    actionButtonText: {
         fontStyle: 'normal',
         fontWeight: 'bold',
         fontSize: 20,
         lineHeight: 31,
-        color: '#fff'
+        color: '#fff',
+        textAlign:"center"
     }
 })
 

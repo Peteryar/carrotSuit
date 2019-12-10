@@ -7,7 +7,6 @@ import ForgotPassword from '../ForgotPassword/index';
 import Login from '../Login/index';
 import Dashboard from '../Dashboard/index';
 import Signup from '../Signup/index';
-import NavDisplayPage from '../NavDisplayPage/index';
 import CreateTasks from '../MainActivities/Tasks/CreateTasks/index';
 import ViewClients from '../MainActivities/Clients/ViewClients/index';
 import ViewTasks from '../MainActivities/Tasks/ViewTasks/index';
@@ -28,10 +27,19 @@ const AppNavigator = createStackNavigator({
     RecordExpenses,
     CreateInvoice,
     CreateRequisition,
-    ViewRequisitions
 },
     {
-        initialRouteName: 'Login'
+        initialRouteName: 'Login',
+        defaultNavigationOptions: {
+            headerStyle: {
+              backgroundColor: '#f4511e',
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
+          },
+        
     }
 );
 

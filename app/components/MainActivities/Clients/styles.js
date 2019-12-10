@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     header: {
-        height:10/100*height,
+        height:15/100*height,
         flexDirection: 'row',
         width: '100%',
         alignItems:"center"
@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         lineHeight: 31
     },
     main: {
-        height:80/100*height,
+        height:75/100*height,
         alignItems: "center",
         justifyContent: "center",
         width: '100%'
